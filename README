@@ -2,3 +2,30 @@ Mini shell
 ==========
 
 my new project in c cuz its better 
+
+Quick Start
+-----------
+Install and run :
+
+     git clone https://https://github.com/0xjah/minishell.git
+     cd minishell 
+     make \ 
+        all              - Build the program
+        clean            - Remove object files
+        fclean           - Remove object files and executable
+        re               - Rebuild everything
+        run              - Build and run the program
+        debug            - Build and run with gdb
+        valgrind         - Build and run with valgrind
+        test             - Run basic functionality tests
+        install-readline - Install readline library
+        help             - Show this help message
+Contributing
+------------
+
+Issues and pull requests are welcome. Please open them on GitHub.
+
+Credits
+-------
+
+Minishell by `0xjah`.
