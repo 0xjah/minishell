@@ -19,7 +19,7 @@ Install and run :
         valgrind         - Build and run with valgrind
         test             - Run basic functionality tests
         install-readline - Install readline library
-        help             - Show this help message
+        help             - Show help message
 
 Contributing
 ------------
