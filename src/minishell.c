@@ -76,17 +76,17 @@ static void	shell_loop(void)
 			
 			prompt = malloc(strlen(display_path) + 20);
 			if (prompt)
-				sprintf(prompt, "✨ %s\n🌟 ", display_path);
+				sprintf(prompt, "%s λ ", display_path);
 			
 			if (display_path)
 				free(display_path);
 		}
 		else
 		{
-			prompt = safe_strdup("✨ frieren_shell\n🌟 ");
+			prompt = safe_strdup(" minishell\n ");
 		}
 		
-		input = readline(prompt ? prompt : "✨ frieren_shell\n🌟 ");
+		input = readline(prompt ? prompt : " minishell\n ");
 		
 		if (prompt)
 			free(prompt);
@@ -113,9 +113,7 @@ int	main(int argc, char **argv, char **envp)
 	
 	init_shell(envp);
 	
-	printf("🌟 Welcome to Frieren's Magic Shell! 🧙‍♀️⚡\n");
-	printf("Cast your spells or type 'exit' to return to the real world.\n");
-	printf("May your journey be filled with magic! ✨\n\n");
+	printf(" Welcome to the MiniShell \n");
 	
 	shell_loop();
 	
